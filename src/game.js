@@ -8,7 +8,7 @@ let CTX
 let CANVAS
 const FRAMES = 60
 
-const qtdEnemies = 10
+const qtdEnemies = 5
 
 let enemies = Array.from({length:qtdEnemies});
 
@@ -33,7 +33,7 @@ const init = () => {
 	enemies = enemies.map(i=>new Enemy(
 			Math.random()*CANVAS.width,
 			Math.random()*CANVAS.height,
-			10, 5, 'red'
+			10, 5, 'green'
 		))
 	
 	keyPress(window)
